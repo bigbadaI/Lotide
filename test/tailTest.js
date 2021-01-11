@@ -1,5 +1,5 @@
 const assertEqual = require('../assertEqual');
-const tail = require('../tail')
+const tail = require('../tail');
 
 
 const words = ["Yo Yo", "back", "Dog"];

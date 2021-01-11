@@ -1,6 +1,3 @@
-
-
-
 const tail = function(actualArr) {
   const returnArr = [];
   if (actualArr.length < 2) {
