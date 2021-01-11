@@ -1,31 +1,4 @@
-const assertArraysEqual = function(actual, expected) {
-  let result = '';
-  actual.forEach((example1) => expected.forEach(example2 => {
-     
-    if (example1 !== example2) {
-      result = `🚫🚫🚫 Assertion Failed: ${actual} !== ${expected}`;
-    } else {
-      result = `👍👍👍 Assertion Passed: ${actual} === ${expected}`;
-    }
-  
-  }));
-  console.log(result);
-};
-const eqArrays = function(arr1, arr2) {
-  let result = '';
-  arr1.forEach((example1) => arr2.forEach(example2 => {
-    if (example1 !== example2) {
-      result = false;
-    } else {
-      result = true;
-    }
-  }));
-  console.log(result);
-  //return true outcome for the assertEqual function
-  return arr1, arr2 = result;
-};
-
-const middle = function (array1) {
+const middle = function(array1) {
   let middleArray = [];
   let workingArray = array1;
   if (array1.length <= 2) {
@@ -41,8 +14,6 @@ const middle = function (array1) {
   }
   return middleArray;
 };
-/*console.log(middle([1, 2]));
-console.log(middle([1, 2, 3]), [2]); // => [2]
-console.log(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-console.log(middle([1, 2, 3, 4, 5, 6]), [3]); // => [3, 4]*/
+
+
+module.exports = middle;
